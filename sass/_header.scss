@@ -19,7 +19,7 @@
        }
   
        .logo{
-        width: 80vh;
+        width: 100%;
         max-width: 1000px;
         margin: auto;
         align-items: center;
@@ -29,7 +29,7 @@
         flex-direction: column; 
           
           img{
-            width: 101%;
+            width: 100%;
             justify-content: center;
             
           }
@@ -112,3 +112,22 @@
   }   
   }
   /*---menu desplegable*/
+
+  @media  (max-width:800px){
+    .logo{
+      width: 80%;
+    }
+  }
+  
+  @media  (max-width:600px){
+    .logo{
+      width: 100%;
+    }
+  }
+
+  @media  (max-width:800px){
+    .logo{
+      width: 80%;
+    }
+  }
+    
