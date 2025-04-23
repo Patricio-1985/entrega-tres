@@ -1,0 +1,155 @@
+*{ box-sizing: border-box;}
+body{
+    margin: 0;
+}
+
+h1{ 
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+
+}
+
+.section-container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* BANNER SECTION */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height:90vh;
+    background-image:url("../imagenes/ban.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    h1{
+        color: white;
+        backdrop-filter: blur(4px);
+        padding: 1px;
+        border-color: black solid;
+    }
+}
+
+/*section 1*/
+.section-main{
+    background-color: rgb(0, 0, 0);
+
+    .section-container{
+        text-align: center;
+        padding: 80px 12px;
+        color: azure;
+        
+    }  
+}
+
+/*section 2*/
+.section-varias{
+    background-color: rgb(22, 10, 10);
+    color: beige;
+    text-align: center;
+
+    p {
+        display: none;
+    }
+
+    h2{
+        margin-top:0;  
+    }
+
+    .section-container{
+        padding: 50px 0;     
+     }
+
+     .cards{
+        background-position: center center;
+        background-size: auto;
+        padding: 30px 0px;
+        border-radius: 20px;
+        margin: 30px;
+    
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 0px rgb(235, 8, 8);
+    }
+
+    .section-varias h3{
+        backdrop-filter: blur(1px);
+        padding: 50px 0px;
+        max-width: 15px;
+        border-radius: 20px;
+        margin-top: 0;
+        margin: 30px;
+    }   
+}
+
+.cards:first-child{
+    background-image: url("../imagenes/ban-text2.jpg");
+    
+   
+}
+.cards:nth-child(2){
+    background-image: url("../imagenes/ban-text2.jpg");
+
+}
+
+.cards:nth-child(3){
+    background-image: url("../imagenes/ban-text2.jpg");
+
+}
+
+@media (min-width: 720px) {
+
+    /*section 1 */
+    .section-main .section-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .section-main .texto-container{
+        width: 50%;
+        text-align: initial;
+        max-width: 600px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .section-main .imagen-container{
+        background-image: url(../imagenes/sabath-tres.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 500px;
+        width: 400px;
+    }
+
+    /*section 2*/
+
+    .section-varias .section-cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-varias p{
+        display: block;
+    }
+
+    .section-varias .cards{
+        padding: 15px;
+        margin: 10px;
+    }
+}

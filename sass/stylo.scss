@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import "./variables";
+
+@import "./header";
+
+@import "./body-home";
+
+@import "./body-productos";
+
+@import "./body-galeria";
+
+@import "./body-nosotros";
+
+@import "./footer";

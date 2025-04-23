@@ -1,0 +1,114 @@
+.header{
+    
+    background-color: #4E94ab;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+   
+    
+       h1{
+        font-size: 350%;
+       }
+  
+       p{
+        font-size: 200%;
+       }
+  
+       .logo{
+        width: 80vh;
+        max-width: 1000px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+          
+          img{
+            width: 101%;
+            justify-content: center;
+            
+          }
+         
+       
+         
+       }
+
+       #btn-menu{
+         display:none;
+          }
+     } 
+
+       header label{ 
+         display: none;
+         width: 70px;
+         height: 70px;
+         padding: 20px;
+         border-right: 1px solid white;
+         text-decoration: none ;
+         }
+  
+       header label:hover{
+         cursor: pointer;
+         background: rgba(0,0,0,0.3);
+         }
+        
+    /*nav*/
+   
+       .menu ul{
+          margin:0;
+          padding:0;
+          list-style: none;
+          display: flex;
+  
+            li:hover{
+               background:rgba(0,0,0,05);}
+            
+            li{
+               text-align: center;
+               flex-grow: 1;
+  
+                 a{ display: block;
+                    padding: 15px 20px;
+                    color: white;
+                    text-decoration: none;
+                    }
+               }
+           }
+  
+            
+  @media (max-width:768px) {
+  header label{
+      display: block;
+  }
+  
+  .menu{
+      position: absolute;
+      background-color: #4E94ab;
+      width: 70%;     
+      margin-left: -75%;
+      transition: all 0.5s;  
+      z-index: 200;
+  }
+  
+  .menu ul{
+      flex-direction: column;
+  }
+  
+  .ul-galeria{
+      flex-direction: none;
+  }
+  
+  .menu li{
+      border-top: 1px solid white;
+  }
+  
+  #btn-menu:checked~ .menu{
+      margin: 0;
+  }   
+  }
+  /*---menu desplegable*/

@@ -1,0 +1,118 @@
+.main-galeria{
+    background-color: rgb(2, 1, 1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 25px;
+    grid-gap: 10px;
+    background-color: black;
+
+    .grid-item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+    
+    .grid-item:nth-child(5) {
+        grid-row-start: span 2;
+    }
+    
+    .grid-item:nth-child(12) {
+        grid-column-start: span 2;
+    }
+
+    .grid-item{
+        position: relative;
+
+        .grid-imagen{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+        }
+    }
+    
+}
+.titulo-imagen{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    backdrop-filter: blur(15px);
+    margin: 0;
+    padding: 10px;
+    font-size:clamp(10px, 4vw + 1rem, 18px);
+}
+
+
+/*---------------media QUERYS ---TABLET ----------*/
+
+@media (min-width:760px){
+    
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+
+        .grid-item:nth-child(3) {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        
+        .grid-item:nth-child(4) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(11) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(6) {
+            grid-row-start: span 4;
+        }
+        .grid-item:nth-child(5) {
+            grid-column-start: span 3;
+        }
+        
+        .grid-item:nth-child(10) {
+            grid-row-start: span 2;
+        }
+        
+        }
+        
+}
+
+/*----------------------------QUERY DESKTOP--------------*/
+
+@media (min-width:900px){
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        width: 90%;
+        margin: auto;
+
+        .grid-item:nth-child(3) {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        
+        .grid-item:nth-child(1) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(7) {
+            grid-row-start: span 2;
+        }
+        
+        .grid-item:nth-child(2) {
+            grid-row-start: span 4;
+        }
+        
+        .grid-item:nth-child(5) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(6) {
+            grid-row-start: span 2;
+        }
+        }
+}

@@ -1,0 +1,59 @@
+*{ box-sizing: border-box;}
+body{
+    margin: 0;
+}
+
+
+h1{ 
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+
+}
+
+.hero-2{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* BANNER SECTION */
+
+.hero-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height:90vh;
+    background-image:url("../imagenes/bann-wolfguitarr.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    h1{
+        color: white;
+        backdrop-filter: blur(4px);
+        padding: 1px;
+        border-color: black solid;
+    }
+}
+
+
+
+.section2-main{
+    background-color: rgb(0, 0, 0);
+
+    .section2-container{
+        text-align: center;
+        padding: 80px 12px;
+        color: azure;
+        
+    }  
+}

@@ -1,0 +1,33 @@
+$bg-principal: #4E94ab;
+
+$bg-secundario: rgb(27, 35, 31); 
+
+// color hover 
+$bg-puntero:rgba(0,0,0,0.3);
+
+// colores de fuentes
+$font-color: white;
+
+//footer
+$bg-terciario: #24262b;
+
+$bg-footer: #24262b;
+
+
+/****mixin ****/
+
+@mixin flexible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15;
+}
+
+@mixin flex-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+
+}
