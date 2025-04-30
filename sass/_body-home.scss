@@ -25,11 +25,7 @@ p{
 /* BANNER SECTION */
 
 .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+    @include flex;
     height:90vh;
     background-image:url("../imagenes/ban.webp");
     background-repeat: no-repeat;
@@ -37,7 +33,7 @@ p{
     background-position: center center;
     
     h1{
-        color: white;
+        color: $font-color;
         backdrop-filter: blur(4px);
         padding: 1px;
         border-color: black solid;
@@ -75,11 +71,11 @@ p{
      }
 
      .cards{
+        @include bordes(30px, 30px);
         background-position: center center;
         background-size: auto;
-        padding: 30px 0px;
         border-radius: 20px;
-        margin: 30px;
+        
     
         font-size: 24px;
         color: rgb(255, 255, 255);
@@ -87,12 +83,11 @@ p{
     }
 
     .section-varias h3{
-        backdrop-filter: blur(1px);
-        padding: 50px 0px;
+        @include bordes(30px, 50px);
+        backdrop-filter: blur(1px);      
         max-width: 15px;
         border-radius: 20px;
         margin-top: 0;
-        margin: 30px;
     }   
 }
 

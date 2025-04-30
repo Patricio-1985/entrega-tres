@@ -1,12 +1,12 @@
+@import "./variables";
+
 .header{
-    
-    background-color: #4E94ab;
-    color: white;
+    @include bordes(0, 20px);
+    background-color: $bg-principal;
+    color: $font-color;
     font-weight: 100;
-    text-align: center;
-    padding: 20px;
+    text-align: center;    
     width: 100%;
-    margin: 0;
     margin-left: 0;
    
     
@@ -19,23 +19,17 @@
        }
   
        .logo{
+        @include flex;
         width: 100%;
-        max-width: 1000px;
-        margin: auto;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column; 
+        max-width: 500px;
+        margin: auto;       
           
           img{
             width: 100%;
             justify-content: center;
             
           }
-         
-       
-         
+                
        }
 
        #btn-menu{
@@ -44,24 +38,22 @@
      } 
 
        header label{ 
-         display: none;
-         width: 70px;
-         height: 70px;
-         padding: 20px;
+        @include medidas (70px, 70px);
+        @include bordes (0, 20px);
+         display: none;         
          border-right: 1px solid white;
          text-decoration: none ;
          }
   
        header label:hover{
          cursor: pointer;
-         background: rgba(0,0,0,0.3);
+         background: $bg-puntero;
          }
         
     /*nav*/
    
        .menu ul{
-          margin:0;
-          padding:0;
+          @include bordes (0,0);          
           list-style: none;
           display: flex;
   
@@ -88,7 +80,7 @@
   
   .menu{
       position: absolute;
-      background-color: #4E94ab;
+      background-color: $bg-principal;
       width: 70%;     
       margin-left: -75%;
       transition: all 0.5s;  

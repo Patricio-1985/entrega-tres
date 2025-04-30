@@ -1,9 +1,8 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
+@import "../sass/reset";
 
 @import "./variables";
+
+@import "./mixin";
 
 @import "./header";
 
@@ -16,3 +15,4 @@
 @import "./body-nosotros";
 
 @import "./footer";
+

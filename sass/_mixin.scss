@@ -1,0 +1,19 @@
+
+
+@mixin medidas ($width, $heigth){
+    width: $width;
+    height: $heigth;
+};
+
+@mixin bordes($margin, $padding){
+    margin: $margin;
+    padding: $padding ;
+};
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

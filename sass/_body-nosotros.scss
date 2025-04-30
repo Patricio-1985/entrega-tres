@@ -26,11 +26,7 @@ p{
 /* BANNER SECTION */
 
 .hero-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+    @include flex;
     height:90vh;
     background-image:url("../imagenes/bann-wolfguitarr.webp");
     background-repeat: no-repeat;
@@ -38,7 +34,7 @@ p{
     background-position: center center;
     
     h1{
-        color: white;
+        color: $font-color;
         backdrop-filter: blur(4px);
         padding: 1px;
         border-color: black solid;
